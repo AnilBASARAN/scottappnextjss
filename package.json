@@ -1,10 +1,6 @@
 {
-<<<<<<< HEAD
-  "name": "intro-v3-app",
-=======
   "name": "scottapp",
->>>>>>> 519fa27 (Initial commit from Create Next App)
-  "version": "0.1.0",
+"version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
