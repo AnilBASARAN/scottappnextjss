@@ -1,5 +1,11 @@
 
 const DocsIdPage = ({params})=> {
-    return <div>id :{params.id}</div>
+    return (
+        <div>
+ 
+  <div>id :{params.id}</div>
+        </div>
+      
+    )
 }
 export default DocsIdPage
