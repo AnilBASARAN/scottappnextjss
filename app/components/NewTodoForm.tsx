@@ -1,14 +1,14 @@
-import { useState } from "react"
+import { newTodo } from "@/utils/actions"
 
-const NewTodoForm = () => {
-    console.log(window.localStorage)
-    const [state,updateState] = useState("")
 
+const NewTodoForm = ({}) => {
+  
     return (
         <div>
-            <h1>New TO DO FORM</h1>
-            <form>
-                <input type="text" />
+        
+            <form action={newTodo} >
+                <input type="text" name="content" className="border border-black/25"/>
+                <button type="submit" >new todo</button>
             </form>
         </div>
     )
