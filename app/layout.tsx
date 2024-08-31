@@ -27,14 +27,14 @@ export default function RootLayout({
       <body className={inter.className}>
 
 
-        <header>
+        <header className=' bg-gray-200 flex flex-col items-center justify-center'>
 
 
-          <nav>
-            <h1>layout</h1>
+          <nav className='justify-center items-center m-2 p-2'>
+            <h1>Welcome to To-Do Application</h1>
             <ul className='flex items-center'>
               {links.map((link) => (
-                <li key={link.href}>
+                <li className='m-2 p-2' key={link.href}>
                   <Link href={link.href}>{link.label}</Link>
                 </li>
               ))}

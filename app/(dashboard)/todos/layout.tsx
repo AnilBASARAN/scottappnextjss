@@ -2,8 +2,8 @@ import NewTodoForm from "@/app/components/NewTodoForm"
 
 const DashboardLayout = ({children}) => {
   return(
-    <div>
-      <h1>dashboard</h1>
+    <div className="flex flex-col justify-center items-center ">
+      <h1>MY TODO LIST</h1>
       <div>
         <NewTodoForm />
       </div>
