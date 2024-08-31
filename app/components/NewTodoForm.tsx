@@ -8,7 +8,7 @@ const NewTodoForm = ({}) => {
         
             <form action={newTodo} >
                 <input type="text" name="content" className=" w-96 p-2 border border-black/25"/>
-                <button className="m-1 p-2 color:white bg-gray-600" type="submit" >new todo</button>
+                <button className="text-white rounded-md m-1 p-2 color:white bg-gray-600" type="submit" >new todo</button>
             </form>
         </div>
     )
