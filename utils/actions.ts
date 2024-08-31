@@ -1,5 +1,6 @@
 'use server'
 import db from './db'
+import { revalidatePath } from 'next/cache'
 
 
 export const newTodo = async (formData) => {
@@ -8,4 +9,6 @@ export const newTodo = async (formData) => {
         content: formData.get('content'),
     },
   })
+
+  revalidatePath('/todos')
 }
