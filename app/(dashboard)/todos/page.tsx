@@ -4,7 +4,11 @@ import { resolve } from 'path'
 
 const getData = async ()=>{
     await new Promise((resolve)=>setTimeout(()=> resolve(),2000))
-    const todos = await db.todo.findMany({})
+    const todos = await db.todo.findMany({
+        orderBy: {
+            createdAt: 'asc', // or 'desc' if you prefer
+        },
+    })
     return todos
 }
 
